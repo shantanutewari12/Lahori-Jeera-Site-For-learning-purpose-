@@ -1,88 +1,138 @@
-# 🍋 Lahori Zeera — Official Brand Website
 
 <div align="center">
 
-![Lahori Zeera — Homepage with Chatbot](screenshot.png)
+```
+██╗      █████╗ ██╗  ██╗ ██████╗ ██████╗ ██╗    ███████╗███████╗███████╗██████╗  █████╗
+██║     ██╔══██╗██║  ██║██╔═══██╗██╔══██╗██║    ╚════██║██╔════╝██╔════╝██╔══██╗██╔══██╗
+██║     ███████║███████║██║   ██║██████╔╝██║        ██╔╝█████╗  █████╗  ██████╔╝███████║
+██║     ██╔══██║██╔══██║██║   ██║██╔══██╗██║       ██╔╝ ██╔══╝  ██╔══╝  ██╔══██╗██╔══██║
+███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║██║       ██║  ███████╗███████╗██║  ██║██║  ██║
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝       ╚═╝  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+```
 
-**The Original Desi Refresher — Pakistan ka #1 Zeera Drink**
+### 🍋 _The Original Desi Refresher — Pakistan Ka #1 Zeera Drink_ 🍋
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-lahori--zeera.vercel.app-lime?style=for-the-badge)](https://lahori-zeera.vercel.app)
-[![Built with Vite](https://img.shields.io/badge/Vite-7.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind-4.x-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?style=for-the-badge&logo=vercel)](https://vercel.com)
+<br/>
+
+[![🚀 Live Site](https://img.shields.io/badge/🚀%20LIVE%20SITE-lahori--zeera.vercel.app-84cc16?style=for-the-badge&labelColor=1a3a1a)](https://lahori-zeera.vercel.app)
+&nbsp;
+[![React](https://img.shields.io/badge/React%2019-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+&nbsp;
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+&nbsp;
+[![Vite](https://img.shields.io/badge/Vite%207-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+&nbsp;
+[![Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
+
+<br/>
+
+> **Roasted Zeera · Kala Namak · Nimbu · Fizzy Soda**
+> 
+> _Ek baar try karo, doosri baar khud aao ge!_
 
 </div>
 
 ---
 
-## 🌐 Live URL
+## 🌐 Live Demo
 
-> **https://lahori-zeera.vercel.app**
+<div align="center">
+
+### **[https://lahori-zeera.vercel.app](https://lahori-zeera.vercel.app)**
+
+</div>
 
 ---
 
-## ✨ Features
+## ✨ What Makes This Special
 
-### 🏠 Home Page — Immersive Scroll Experience
-- **Sticky animated bottle** that follows the user's scroll — moving, rotating and scaling across 6 full-screen sections
-- **Mouse-parallax 3D tilt** for a premium fizzi-style feel
-- **Floating ingredient elements** (lemon, mint, ice, splash) that parallax at different speeds
-- **6 story sections**: Hero → Jeera Ka Tadka → Street Science → Garmi Ka Ilaaj → 100% Bold → CTA
-- Framer Motion powered entrance animations on every section
+<table>
+<tr>
+<td width="50%">
 
-### 📞 Contact Page — "Baat Karein"
-- Glassmorphism contact form with name, email, phone, message fields
-- Form submission opens native mail client pre-filled with user's enquiry
-- 3D floating bottle preview with mouse-parallax tilt
-- Direct phone & email links for instant reach
+### 🏠 Immersive Home Page
+- **Sticky 3D bottle** that animates across scroll
+- **Mouse-parallax tilt** — premium fizzi-style feel
+- **Floating ingredients** — lemon, mint, ice, splash
+- **6 cinematic scroll sections** with entrance animations
+- Deep desi green + punchy lime color palette
 
-### 🤖 Zeera Bot — Animated Chatbot
-The star feature — a **fully animated walking chatbot** that roams around the screen like a toy:
+</td>
+<td width="50%">
 
-| Feature | Description |
+### 📞 Contact Page
+- Glassmorphism contact form
+- Auto-fills your mail client on submit
+- 3D floating bottle with mouse tracking
+- Direct click-to-call & click-to-email
+- Smooth slide-in animations
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🤖 Zeera Bot — The Star Feature
+An **animated bottle character** that literally walks, jumps and bounces around your screen like a toy, then opens a full chat panel when clicked.
+
+</td>
+<td width="50%">
+
+### 🪑 Smart Context Awareness
+On the `/contact` page, the bot **stops walking** and sits on the side, periodically jumping to grab your attention — without disturbing your form.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🤖 Zeera Bot Deep Dive
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    🍋 ZEERA BOT                          │
+├─────────────────┬───────────────────────────────────────┤
+│  🚶 Walk Mode   │  Roams entire screen randomly         │
+│  🦵 Animations  │  Alternating orange legs              │
+│  🔶 Glow Rings  │  Double pulsing orange radar rings    │
+│  💬 Speech      │  Random Urdu/English sayings pop up   │
+│  🤸 Actions     │  Jumps & bounces on arrival           │
+│  🪑 Sit Mode    │  Parks on contact page, jumps idle    │
+│  💬 Chat Window │  Full Q&A panel on click              │
+│  ⚡ Quick Chips  │  One-tap suggestion buttons           │
+└─────────────────┴───────────────────────────────────────┘
+```
+
+**Zeera Bot can answer:**
+
+| Topic | Example Query |
 |---|---|
-| 🚶 **Screen Walker** | Bot walks to random positions across the entire screen |
-| 🦵 **Animated Legs** | Two orange legs that alternate walking motion |
-| ✨ **Orange Glow Rings** | Double pulsing radar rings for strong visibility |
-| 💬 **Speech Bubbles** | Random Urdu/English marketing sayings pop up |
-| 🤸 **Jumps & Bounces** | Randomly jumps and bounces after reaching destinations |
-| 🪑 **Contact Sit Mode** | On `/contact` page, bot parks on the right side and periodically jumps |
-| 💬 **Chat Window** | Click to open a full chat panel with Q&A |
-| ⚡ **Quick Suggestions** | One-tap question chips for instant answers |
-
-**Bot can answer questions about:**
-- Flavor / Taste
-- Ingredients
-- Price & Sizes
-- Availability & Cities
-- Health benefits
-- Contact info
-- Brand story
-
-### 🎨 Design System
-- **Dark desi green** brand palette (`hsl(142 71% 15%)`)
-- **Punchy lime-yellow** primary accent (`hsl(75 94% 57%)`)
-- **Bricolage Grotesque** for headings + **Plus Jakarta Sans** for body
-- Full glassmorphism cards with `backdrop-blur`
-- `text-stroke` utility for outlined typography
+| 🍋 Flavor | `"flavor kaisa hai?"` |
+| 💰 Price | `"price kya hai?"` |
+| 📍 Availability | `"kahan milta hai?"` |
+| 🌿 Ingredients | `"ingredients kya hain?"` |
+| 💪 Health | `"healthy hai?"` |
+| 🍾 Sizes | `"sizes kya hain?"` |
+| 📞 Contact | `"contact number?"` |
+| 📖 Story | `"brand ki kahani?"` |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | React 19 + TypeScript |
-| Build Tool | Vite 7 |
-| Styling | TailwindCSS 4 + tw-animate-css |
-| Animations | Framer Motion 12 |
-| Routing | Wouter 3 |
-| UI Components | Radix UI (55+ components) |
-| Icons | Lucide React |
-| Package Manager | pnpm (workspace monorepo) |
-| Deployment | Vercel |
+```
+Frontend      →  React 19 + TypeScript
+Build         →  Vite 7
+Styling       →  TailwindCSS 4 + tw-animate-css
+Animations    →  Framer Motion 12
+Routing       →  Wouter 3
+UI Primitives →  Radix UI (55+ components)
+Icons         →  Lucide React
+Fonts         →  Bricolage Grotesque + Plus Jakarta Sans
+Pkg Manager   →  pnpm (workspace monorepo)
+Deployment    →  Vercel
+```
 
 ---
 
@@ -91,28 +141,24 @@ The star feature — a **fully animated walking chatbot** that roams around the 
 ```
 Lahori-Jeera-Site/
 ├── artifacts/
-│   └── lahori-zeera/          # Main web app
-│       ├── public/            # Static assets
-│       │   ├── lahori-zeera-hero.png   # Hero bottle image (also favicon)
+│   └── lahori-zeera/              ← Main web app
+│       ├── public/
+│       │   ├── lahori-zeera-hero.png   ← Hero bottle (also favicon)
 │       │   ├── lemon-slice.png
 │       │   ├── mint-leaf.png
 │       │   ├── ice-cube.png
 │       │   └── water-splash.png
-│       ├── src/
-│       │   ├── components/
-│       │   │   ├── Chatbot.tsx         # 🤖 Animated walking chatbot
-│       │   │   └── ui/                 # 55 Radix UI components
-│       │   ├── pages/
-│       │   │   ├── Home.tsx            # 6-section scroll experience
-│       │   │   ├── Contact.tsx         # Contact form + info
-│       │   │   └── not-found.tsx       # 404 page
-│       │   ├── App.tsx                 # Router + providers
-│       │   ├── main.tsx
-│       │   └── index.css              # Design tokens + Tailwind
-│       ├── index.html
-│       ├── vite.config.ts
-│       └── vercel.json
-├── vercel.json                # Root-level Vercel config for monorepo
+│       └── src/
+│           ├── components/
+│           │   ├── Chatbot.tsx         ← 🤖 Animated walking chatbot
+│           │   └── ui/                 ← 55 Radix UI components
+│           ├── pages/
+│           │   ├── Home.tsx            ← 6-section scroll experience
+│           │   ├── Contact.tsx         ← Contact form + info
+│           │   └── not-found.tsx
+│           ├── App.tsx
+│           └── index.css              ← Design tokens
+├── vercel.json                    ← Monorepo deploy config
 ├── pnpm-workspace.yaml
 └── README.md
 ```
@@ -121,106 +167,70 @@ Lahori-Jeera-Site/
 
 ## 🚀 Local Development
 
-### Prerequisites
-- Node.js 18+
-- pnpm 10+
-
-### Setup
-
 ```bash
-# Clone the repo
+# Clone
 git clone https://github.com/shantanutewari12/Lahori-Jeera-Site.git
 cd Lahori-Jeera-Site
 
-# Install all workspace dependencies
+# Install all workspace deps from root
 pnpm install
 
-# Navigate to the app
+# Run dev server
 cd artifacts/lahori-zeera
-
-# Start dev server
 pnpm dev
+
+# Open → http://localhost:5173
 ```
 
-App opens at **http://localhost:5173**
-
-### Environment Variables
-
-The `.env` file inside `artifacts/lahori-zeera/` is pre-configured:
-
-```env
-PORT=5173
-BASE_PATH=/
-```
-
-No additional setup needed for local dev.
+`.env` is pre-configured — no extra setup needed.
 
 ---
 
-## 📦 Build & Deploy
-
-### Build locally
-
-```bash
-cd artifacts/lahori-zeera
-pnpm build
-# Output: artifacts/lahori-zeera/dist/public/
-```
-
-### Deploy to Vercel
+## 📦 Deploy to Vercel
 
 ```bash
 # From project root
 vercel deploy --prod
 ```
 
-Vercel auto-detects the `vercel.json` at root which:
-1. Runs `pnpm install` from workspace root (resolves all catalog deps)
-2. Builds with `cd artifacts/lahori-zeera && pnpm build`
-3. Serves from `artifacts/lahori-zeera/dist/public/`
-4. Handles SPA routing (all paths → `index.html`)
+The root `vercel.json` handles everything:
+- ✅ `pnpm install` from workspace root (resolves all catalog deps)
+- ✅ `cd artifacts/lahori-zeera && pnpm build`
+- ✅ Serves from `dist/public/`
+- ✅ SPA routing (all paths → `index.html`)
 
 ---
 
-## 📸 Pages Overview
-
-| Page | Route | Description |
-|---|---|---|
-| Home | `/` | Full-screen scroll experience with sticky bottle |
-| Contact | `/contact` | Order form + contact info |
-| 404 | `*` | Not found page |
-
----
-
-## 🤖 Chatbot Knowledge Base
-
-The Zeera Bot responds to queries about:
+## 🎨 Design Language
 
 ```
-"flavor kaisa hai?"     → Taste description
-"price kya hai?"        → Rs 40 / Rs 70 / bulk deals
-"kahan milta hai?"      → Lahore, Karachi, Islamabad, Faisalabad
-"ingredients kya hain?" → Zeera, kala namak, nimbu, soda
-"healthy hai?"          → Digestive benefits
-"contact?"              → WhatsApp + email
-"sizes?"                → 250ml, 500ml, 1L, packs
-"history?"              → Brand story
+Background   →  hsl(142 71% 15%)   Deep desi green
+Primary      →  hsl(75 94% 57%)    Punchy lime-yellow
+Foreground   →  hsl(60 100% 95%)   Warm cream white
+Bot Accent   →  #ff6b00            Vivid orange (for visibility)
+
+Heading Font →  Bricolage Grotesque (Black 800)
+Body Font    →  Plus Jakarta Sans
+Style        →  Glassmorphism + backdrop-blur cards
 ```
 
 ---
 
 ## 👤 Contact
 
-**Shantanu Tewari**  
-📧 shantanitiwari12@gmail.com  
-📞 +91-9368042721  
-🌐 [lahori-zeera.vercel.app](https://lahori-zeera.vercel.app)
+<div align="center">
+
+**Shantanu Tewari**
+
+📧 [shantanitiwari12@gmail.com](mailto:shantanitiwari12@gmail.com) &nbsp;|&nbsp; 📞 +91-9368042721
+
+🌐 **[lahori-zeera.vercel.app](https://lahori-zeera.vercel.app)**
+
+<br/>
 
 ---
 
-<div align="center">
-
-Made with ❤️ and a lot of 🍋 Zeera
+_Made with ❤️, lots of 🍋 and Zeera power 💪_
 
 **Garmi ka ilaaj — Lahori Zeera!**
 
