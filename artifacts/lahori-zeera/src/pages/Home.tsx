@@ -215,7 +215,7 @@ function StorySection() {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 0.6, type: "spring" }}
         >
-          Zeera Ka <br/><span className="text-primary">Tadka.</span>
+          Jeera Ka <br/><span className="text-primary">Tadka.</span>
         </motion.h2>
         <motion.p 
           className="mt-8 text-xl md:text-2xl text-muted-foreground font-medium"

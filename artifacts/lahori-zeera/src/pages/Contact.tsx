@@ -58,7 +58,7 @@ export default function Contact() {
       <header className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6">
         <Link href="/">
           <button className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-primary transition-colors">
-            Lahori Zeera
+            Lahori Jeera
           </button>
         </Link>
         <Link href="/">
