@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Lahori Zeera](artifacts/lahori-zeera/public/opengraph.jpg)
+![Lahori Zeera — Homepage with Chatbot](screenshot.png)
 
 **The Original Desi Refresher — Pakistan ka #1 Zeera Drink**
 
