@@ -1,5 +1,6 @@
-import { useRef } from 'react';
-import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { Link } from 'wouter';
+import { motion, useScroll, useTransform, useSpring, useInView, useMotionValue } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
 const BOTTLE_IMG = `${import.meta.env.BASE_URL}lahori-zeera-hero.png`;
@@ -10,7 +11,7 @@ const ICE_IMG = `${import.meta.env.BASE_URL}ice-cube.png`;
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
@@ -21,6 +22,23 @@ export default function Home() {
     damping: 20,
     restDelta: 0.001
   });
+
+  // Mouse-based parallax tilt for premium 3D feel
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const tiltX = useSpring(useTransform(mouseY, [-0.5, 0.5], [12, -12]), { stiffness: 80, damping: 18 });
+  const tiltY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-18, 18]), { stiffness: 80, damping: 18 });
+
+  useEffect(() => {
+    const onMove = (e: MouseEvent) => {
+      const x = e.clientX / window.innerWidth - 0.5;
+      const y = e.clientY / window.innerHeight - 0.5;
+      mouseX.set(x);
+      mouseY.set(y);
+    };
+    window.addEventListener('mousemove', onMove);
+    return () => window.removeEventListener('mousemove', onMove);
+  }, [mouseX, mouseY]);
 
   // Bottle transformations - complex path across 8 sections
   // Sections: Hero(0), Story(1), Ingredients(2), Culture(3), Refresh(4), Cta(5)
@@ -63,32 +81,42 @@ export default function Home() {
           }}
           className="relative w-64 md:w-80 lg:w-[28rem] h-auto flex items-center justify-center"
         >
-          {/* Inner wrapper handles continuous floating + slow Y-axis 3D rotation */}
+          {/* Mouse parallax tilt wrapper (3D) */}
           <motion.div
             className="relative w-full h-full flex items-center justify-center [transform-style:preserve-3d]"
-            animate={{
-              y: [0, -18, 0, 18, 0],
-              rotateY: [0, 360],
-            }}
-            transition={{
-              y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-              rotateY: { duration: 14, repeat: Infinity, ease: "linear" },
-            }}
+            style={{ rotateX: tiltX, rotateY: tiltY }}
           >
-            {/* Soft radial glow behind bottle */}
-            <div className="absolute inset-0 -z-10 flex items-center justify-center">
-              <div className="w-[120%] h-[120%] rounded-full bg-[radial-gradient(circle_at_center,_rgba(163,230,53,0.55),_rgba(234,179,8,0.25)_40%,_transparent_70%)] blur-3xl" />
-            </div>
+            {/* Inner wrapper - gentle floating + sway, fizzi-style */}
+            <motion.div
+              className="relative w-full h-full flex items-center justify-center [transform-style:preserve-3d]"
+              animate={{
+                y: [0, -22, 0],
+                rotate: [-3, 3, -3],
+              }}
+              transition={{
+                y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+                rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+              }}
+            >
+              {/* Soft radial glow behind bottle */}
+              <div className="absolute inset-0 -z-10 flex items-center justify-center">
+                <div className="w-[120%] h-[120%] rounded-full bg-[radial-gradient(circle_at_center,_rgba(163,230,53,0.55),_rgba(234,179,8,0.25)_40%,_transparent_70%)] blur-3xl" />
+              </div>
 
-            <img
-              src={BOTTLE_IMG}
-              alt="Lahori Zeera Bottle"
-              draggable={false}
-              className="w-full h-auto object-contain select-none drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)]"
-            />
+              <img
+                src={BOTTLE_IMG}
+                alt="Lahori Zeera Bottle"
+                draggable={false}
+                className="w-full h-auto object-contain select-none drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)]"
+              />
 
-            {/* Soft ground reflection / shadow puddle */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[60%] h-8 rounded-[50%] bg-black/40 blur-2xl" />
+              {/* Soft ground reflection / shadow puddle */}
+              <motion.div
+                className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[60%] h-8 rounded-[50%] bg-black/40 blur-2xl"
+                animate={{ scaleX: [1, 0.85, 1], opacity: [0.5, 0.35, 0.5] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
@@ -338,9 +366,11 @@ function CtaSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Button size="lg" className="rounded-full text-xl h-20 px-12 bg-primary text-primary-foreground font-black uppercase tracking-wider hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_40px_rgba(163,230,53,0.6)]">
-            Grab a Bottle Now
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="rounded-full text-xl h-20 px-12 bg-primary text-primary-foreground font-black uppercase tracking-wider hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_40px_rgba(163,230,53,0.6)]">
+              Grab a Bottle Now
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
