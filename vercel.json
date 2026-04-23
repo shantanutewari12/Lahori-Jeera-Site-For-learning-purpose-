@@ -1,0 +1,14 @@
+{
+  "buildCommand": "cd artifacts/lahori-zeera && pnpm build",
+  "outputDirectory": "artifacts/lahori-zeera/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/"
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
